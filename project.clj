@@ -5,10 +5,12 @@
 
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/java.jdbc "0.3.2"]
+                 [org.clojure/clojure-contrib "1.2.0"]
                  [postgresql "9.1-901.jdbc4"]
                  [ring/ring-jetty-adapter "1.2.1"]
                  [hiccup "1.0.4"]
-                 [compojure "1.1.6"]]
+                 [compojure "1.1.6"]
+                 [dk.ative/docjure "1.8.0"]]
 
   :ring {:handler spike.handler/app
          :nrepl {:start? true
